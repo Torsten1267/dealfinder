@@ -1,5 +1,4 @@
-[dealfinder_homepage.html](https://github.com/user-attachments/files/26596041/dealfinder_homepage.html)
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="de">
 <head>
 <meta charset="UTF-8">
@@ -244,18 +243,28 @@
 <script>
 // ─── Amazon Affiliate-Links ───────────────────────────────
 function openAffiliate(url) {
-  window.open(url, '_blank');
+  window.open(url, '_blank', 'noopener');
+}
+
+// ─── Produkt-Detail Dummy ─────────────────────────────────
+function openProduct(name, price) {
+  alert('Produkt: ' + name + '\nPreis: ' + price + '\n\nHier kommt später deine Produktseite!');
 }
 
 // ─── Pinterest Share-Funktion ─────────────────────────────
 function pinProduct(description, imageUrl, pageUrl) {
   const base   = 'https://pinterest.com/pin/create/button/';
+  const fullUrl = location.href.split('?')[0];
   const params = new URLSearchParams({
-    url:         pageUrl,
-    media:       imageUrl,
+    url:         fullUrl,
+    media:       imageUrl || fullUrl,
     description: description
   });
-  window.open(base + '?' + params, '_blank', 'width=750,height=550');
+  const pinterestUrl = base + '?' + params.toString();
+  const win = window.open(pinterestUrl, 'pinterest', 'width=750,height=550,noopener');
+  if (!win) {
+    window.location.href = pinterestUrl;
+  }
 }
 
 // ─── Supabase Konfiguration ───────────────────────────────

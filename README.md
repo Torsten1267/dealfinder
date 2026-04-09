@@ -250,6 +250,7 @@ function filterCat(cat, el) {
   document.querySelectorAll('.cat-pill').forEach(p=>p.classList.remove('active'));
   el.classList.add('active');
   render();
+autoPinTopDeal();
 }
 
 function filterShop(shop, el) {
@@ -265,9 +266,25 @@ function doSearch() {
 }
 
 function pin(desc, url) {
-  const p = new URLSearchParams({url, description: desc});
+  const p = new URLSearchParams({
+    url: url,
+    description: desc,
+    media: url,
+    method: 'button',
+    client_id: '1560392'
+  });
   const w = window.open('https://pinterest.com/pin/create/button/?'+p,'pinterest','width=750,height=550');
   if (!w) window.location.href = 'https://pinterest.com/pin/create/button/?'+p;
+}
+
+// Pinterest automatisch pinnen beim Laden
+async function autoPinTopDeal() {
+  const deal = products[0];
+  const msg = document.createElement('div');
+  msg.style.cssText = 'position:fixed;bottom:24px;right:24px;background:#e60023;color:#fff;padding:12px 20px;border-radius:12px;font-size:13px;font-weight:600;z-index:9999;box-shadow:0 4px 20px rgba(0,0,0,0.15)';
+  msg.innerHTML = '📌 Top Deal bereit zum Pinnen! <button onclick="pin(\''+deal.pin+'\',\''+deal.url+'\')" style="background:white;color:#e60023;border:none;padding:4px 10px;border-radius:8px;margin-left:8px;cursor:pointer;font-weight:600;">Jetzt pinnen</button>';
+  document.body.appendChild(msg);
+  setTimeout(() => msg.remove(), 10000);
 }
 
 render();

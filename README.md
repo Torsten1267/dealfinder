@@ -133,13 +133,13 @@
 
 <script>
 const products = [
-  { title:'Sony WH-1000XM5 Kopfhörer', shop:'Amazon', priceNow:'279,00', priceOld:'349,00', save:'-70 €', emoji:'🎧', badge:'-20%', badgeClass:'sale', cat:'elektronik', url:'https://www.amazon.de/dp/B09XS7JWHH?tag=DEIN-TAG-21', pin:'Sony WH-1000XM5 – Nur 279€ statt 349€!' },
+  { title:'Sony WH-1000XM5 Kopfhörer', shop:'Amazon', priceNow:'279,00', priceOld:'349,00', save:'-70 €', emoji:'🎧', badge:'-20%', badgeClass:'sale', cat:'elektronik', url:'https://www.amazon.de/dp/B09XS7JWHH?tag=84690381578-21', pin:'Sony WH-1000XM5 – Nur 279€ statt 349€!' },
   { title:'Nike Air Max 270', shop:'Zalando', priceNow:'89,95', priceOld:'129,95', save:'-40 €', emoji:'👟', badge:'Zalando', badgeClass:'aff', cat:'mode', url:'https://www.zalando.de', pin:'Nike Air Max 270 – Jetzt nur 89,95€ bei Zalando!' },
-  { title:'Philips Kaffeemaschine 3000', shop:'Amazon', priceNow:'149,00', priceOld:'229,00', save:'-80 €', emoji:'☕', badge:'-35%', badgeClass:'sale', cat:'haushalt', url:'https://www.amazon.de/s?k=philips+kaffeemaschine&tag=DEIN-TAG-21', pin:'Philips Kaffeemaschine – 149€ statt 229€!' },
-  { title:'Apple AirPods Pro 2', shop:'Amazon', priceNow:'199,00', priceOld:'279,00', save:'-80 €', emoji:'🎵', badge:'-29%', badgeClass:'sale', cat:'elektronik', url:'https://www.amazon.de/s?k=airpods+pro+2&tag=DEIN-TAG-21', pin:'Apple AirPods Pro 2 – Nur 199€!' },
+  { title:'Philips Kaffeemaschine 3000', shop:'Amazon', priceNow:'149,00', priceOld:'229,00', save:'-80 €', emoji:'☕', badge:'-35%', badgeClass:'sale', cat:'haushalt', url:'https://www.amazon.de/s?k=philips+kaffeemaschine&tag=84690381578-21', pin:'Philips Kaffeemaschine – 149€ statt 229€!' },
+  { title:'Apple AirPods Pro 2', shop:'Amazon', priceNow:'199,00', priceOld:'279,00', save:'-80 €', emoji:'🎵', badge:'-29%', badgeClass:'sale', cat:'elektronik', url:'https://www.amazon.de/s?k=airpods+pro+2&tag=84690381578-21', pin:'Apple AirPods Pro 2 – Nur 199€!' },
   { title:'Adidas Ultraboost 22', shop:'Zalando', priceNow:'99,95', priceOld:'179,95', save:'-80 €', emoji:'🏃', badge:'Zalando', badgeClass:'aff', cat:'sport', url:'https://www.zalando.de', pin:'Adidas Ultraboost 22 – 99,95€ statt 179,95€!' },
-  { title:'Oral-B iO Series 8', shop:'Amazon', priceNow:'79,99', priceOld:'149,99', save:'-70 €', emoji:'🪥', badge:'-47%', badgeClass:'sale', cat:'beauty', url:'https://www.amazon.de/s?k=oral-b+io+series+8&tag=DEIN-TAG-21', pin:'Oral-B iO Series 8 – Nur 79,99€!' },
-  { title:'Samsung 4K Smart TV 55"', shop:'Amazon', priceNow:'449,00', priceOld:'699,00', save:'-250 €', emoji:'📺', badge:'-36%', badgeClass:'sale', cat:'elektronik', url:'https://www.amazon.de/s?k=samsung+4k+tv+55&tag=DEIN-TAG-21', pin:'Samsung 4K TV 55" – 449€ statt 699€!' },
+  { title:'Oral-B iO Series 8', shop:'Amazon', priceNow:'79,99', priceOld:'149,99', save:'-70 €', emoji:'🪥', badge:'-47%', badgeClass:'sale', cat:'beauty', url:'https://www.amazon.de/s?k=oral-b+io+series+8&tag=84690381578-21', pin:'Oral-B iO Series 8 – Nur 79,99€!' },
+  { title:'Samsung 4K Smart TV 55"', shop:'Amazon', priceNow:'449,00', priceOld:'699,00', save:'-250 €', emoji:'📺', badge:'-36%', badgeClass:'sale', cat:'elektronik', url:'https://www.amazon.de/s?k=samsung+4k+tv+55&tag=84690381578-21', pin:'Samsung 4K TV 55" – 449€ statt 699€!' },
   { title:"Levi's 501 Original Jeans", shop:'Zalando', priceNow:'59,95', priceOld:'99,95', save:'-40 €', emoji:'👖', badge:'Zalando', badgeClass:'aff', cat:'mode', url:'https://www.zalando.de', pin:"Levi's 501 Jeans – Nur 59,95€ bei Zalando!" }
 ];
 
